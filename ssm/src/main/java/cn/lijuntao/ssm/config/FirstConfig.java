@@ -9,11 +9,10 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.Import;
-import org.springframework.context.annotation.PropertySource;
-//配置标签，专门配置一些bean
+//閰嶇疆鏍囩锛屼笓闂ㄩ厤缃竴浜沚ean
 @Configuration
 @ComponentScan(basePackages = "cn.lijuntao.ssm")
-//加载其他配置
+//鍔犺浇鍏朵粬閰嶇疆
 @Import(SecondConfig.class)
 @EnableAspectJAutoProxy
 //@PropertySource("classpath:log4j.properties")

@@ -1,4 +1,4 @@
-package cn.lijuntao.ssm.config.service;
+package cn.lijuntao.ssm.service;
 
 import org.springframework.stereotype.Service;
 

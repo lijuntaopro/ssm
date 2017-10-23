@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import cn.lijuntao.ssm.config.FirstConfig;
 import cn.lijuntao.ssm.config.SecondConfig;
-import cn.lijuntao.ssm.config.service.HelloService;
+import cn.lijuntao.ssm.service.HelloService;
 @Controller
 @RequestMapping("/app/")
 public class HelloController {

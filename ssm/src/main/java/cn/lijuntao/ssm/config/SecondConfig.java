@@ -1,7 +1,7 @@
 package cn.lijuntao.ssm.config;
 
 import org.springframework.context.annotation.Configuration;
-//配置标签，专门配置一些bean
+//閰嶇疆鏍囩锛屼笓闂ㄩ厤缃竴浜沚ean
 @Configuration
 public class SecondConfig {
 	

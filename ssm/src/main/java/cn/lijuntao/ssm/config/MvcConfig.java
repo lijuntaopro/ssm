@@ -26,15 +26,13 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
-import org.springframework.web.servlet.resource.ResourceHttpRequestHandler;
-import org.springframework.web.servlet.view.InternalResourceView;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
 
 import cn.lijuntao.ssm.interceptor.TimeBasedAccessInterceptor;
 
-//ÅäÖÃ±êÇ©£¬×¨ÃÅÅäÖÃÒ»Ğ©bean
+//é…ç½®æ ‡ç­¾ï¼Œä¸“é—¨é…ç½®ä¸€äº›bean
 @Configuration
 @ComponentScan("cn.lijuntao.ssm")
 @EnableWebMvc
@@ -93,7 +91,7 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
     public ViewResolver getViewResolver2(){
     	UrlBasedViewResolver viewResolver = new UrlBasedViewResolver();
     	viewResolver.setPrefix("/WEB-INF/jsp/");
-    	//ĞèÒªÓĞjstl°ü
+    	//éœ€è¦æœ‰jstlåŒ…
     	viewResolver.setViewClass(JstlView.class);
     	viewResolver.setSuffix(".jsp");
     	viewResolver.setExposeContextBeansAsAttributes(true);
@@ -108,9 +106,9 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
     }
     
     /**
-     * servlet 3.0 ×Ô´øÊôĞÔ
-     * @author Àî¿¡ÌÎ
-     * @date 2017Äê8ÔÂ25ÈÕ
+     * servlet 3.0 è‡ªå¸¦å±æ€§
+     * @author æä¿Šæ¶›
+     * @date 2017å¹´8æœˆ25æ—¥
      * @return
      */
     @Bean
